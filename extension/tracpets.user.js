@@ -1,5 +1,6 @@
 // ==UserScript==
 // @name          TracPets
+// @icon          assets/icon32.png
 // @namespace     jimdo.com
 // @description   Extends Trac and the Kanban-Card page to support animal names additional to ticket ids
 // @include       https://svn.jimdo-server.com/trac

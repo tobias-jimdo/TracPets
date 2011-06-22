@@ -23,11 +23,11 @@ $("title,body * :not(textarea|input)").replaceText(/#\d+/, composeTicketString);
 
 // Send searches for the identifier directly to the ticket
 $('#search').submit(function(e) {
-  e.preventDefault();
   var searchText = $('#proj-search');
   var ticketId = TicketIdNameConverter.ticketIdForName(searchText.val());
   if(ticketId){
     document.location = '/trac/ticket/' + ticketId;
+    e.preventDefault();
   }
 });
 

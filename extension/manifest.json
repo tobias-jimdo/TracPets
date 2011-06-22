@@ -1,0 +1,25 @@
+{
+  "icons": { 
+    "16": "assets/icon16.png",
+    "48": "assets/icon48.png",
+    "128": "assets/icon128.png" 
+  },
+   "content_scripts": [ {
+      "exclude_globs": [  ],
+      "include_globs": [ "https://svn.jimdo-server.com/trac", "https://svn.jimdo-server.com/trac/*", "https://kanban.jimdo-server.com/*" ],
+      "js": [ 
+        "lib/jquery.min.js",
+        "lib/jquery.ba-replacetext.min.js",
+        "lib/ticketIdNameConverter.js",
+        "lib/adjectives.js",
+        "lib/animals.js",
+        "tracpets.user.js" 
+      ],
+      "matches": [ "http://*/*", "https://*/*" ]
+   } ],
+   "converted_from_user_script": true,
+   "description": "Extends Trac and the Kanban-Card page to support animal names additional to ticket ids",
+   "key": "A1TDDzryStnIMsVDxWinzxNMjXxQk9jMXV/682Hd4dI=",
+   "name": "TracPets",
+   "version": "1.0"
+}

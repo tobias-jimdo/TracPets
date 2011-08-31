@@ -1011,7 +1011,7 @@ adjectives = [
 'yellow',
 'anxious',
 'puny',
-'',
+'cultured',
 'guttural',
 'ancient',
 'placid',
@@ -1133,7 +1133,6 @@ adjectives = [
 'torpid',
 'frightened',
 'overwrought',
-'rotten',
-'cultured'
+'rotten'
 ];
 

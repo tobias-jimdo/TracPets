@@ -1,0 +1,3 @@
+v1.1
+
+ * ignoring <pre>'s when appending animal names to possible IDs

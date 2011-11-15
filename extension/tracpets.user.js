@@ -19,7 +19,8 @@ function composeTicketString(ticketId) {
   return ticketId + ' (' + TicketIdNameConverter.nameForTicketId(ticketId) + ')';
 }
 
-$("title,body * :not(textarea|input)").replaceText(/#\d+/, composeTicketString); 
+//$("title,body * :not(textarea|input|pre)").replaceText(/#\d+/, composeTicketString); 
+$("title,body * :not(pre,textarea)").replaceText(/#\d+/, composeTicketString); 
 
 // Send searches for the identifier directly to the ticket
 $('#search').submit(function(e) {
